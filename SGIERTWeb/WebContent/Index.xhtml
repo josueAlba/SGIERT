@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<body>
+	
+	<p:layout fullPage="true">
+		<p:layoutUnit position="north" size="108"  style="background-color: #33BBFF;">
+			<center>
+			<p:graphicImage value="/imagenes/banner1.png" />
+			</center>
+		</p:layoutUnit >
+		<p:layoutUnit position="south" size="50" style="background-color: #33BBFF;">
+		</p:layoutUnit>
+
+		<p:layoutUnit position="center" style="background-color: #33BBFF;">
+		<p:growl autoUpdate="true"></p:growl>
+<center>
+	<p:panel header="Acceso al sistema de ordenes de trabajo" style="width:500px" >
+		<form >
+			<p:panelGrid columns="2"  layout="grid" >
+
+				<h:outputText value="Ingrese su número de cédula: " />
+				<p:inputText size="10" required="true" maxlength="10"
+					requiredMessage="Debe ingresar el número de cédula" value=""></p:inputText>
+
+				<h:outputText value="Ingrese clave:" />
+				<p:password requiered="true" requiredMessage="Debe indicar la clave"></p:password>
+
+				<p:commandButton value="INGRESAR" styleClass="ui-priority-primary" ></p:commandButton>
+			</p:panelGrid>
+		</form>
+
+	</p:panel>
+	</center>
+		</p:layoutUnit>
+
+	</p:layout>
+	
+</body>
+</html>

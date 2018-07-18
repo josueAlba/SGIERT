@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<body>
+	<p:layout fullPage="true">
+		<p:layoutUnit position="north" size="108"  style="background-color: #33BBFF;">
+			<center>
+			<p:graphicImage value="/imagenes/banner1.png" />
+			</center>
+		</p:layoutUnit >
+		<p:layoutUnit position="south" size="50" style="background-color: #33BBFF;">
+		</p:layoutUnit>
+
+		<p:layoutUnit position="west" size="200" style="background-color: #33BBFF;" header="MENU" resizable="true" closable="true" collapsible="true" effect="drop">
+			<h:form>
+				<p:growl>
+					<p:autoUpdate />
+				</p:growl>
+
+				<p:panelMenu style="width:190px" >
+					<p:submenu label="Clientes">
+						<p:menuitem value="Agregar" icon="ui-icon-disk" />
+						<p:menuitem value="Modificar" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Eliminar" icon="ui-icon-closethick" />
+						<p:menuitem value="Buscar" icon="ui-icon-search" />
+						<p:menuitem value="Ver" icon="ui-icon-bookmark" />
+					</p:submenu>
+					<p:submenu label="Usuarios">
+						<p:menuitem value="Agregar" icon="ui-icon-disk" />
+						<p:menuitem value="Modificar" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Eliminar" icon="ui-icon-closethick" />
+						<p:menuitem value="Buscar" icon="ui-icon-search" />
+						<p:menuitem value="Ver" icon="ui-icon-bookmark" />
+					</p:submenu>
+					<p:submenu label="Empleados">
+						<p:menuitem value="Agregar" icon="ui-icon-disk" />
+						<p:menuitem value="Modificar" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Eliminar" icon="ui-icon-closethick" />
+						<p:menuitem value="Buscar" icon="ui-icon-search" />
+						<p:menuitem value="Ver" icon="ui-icon-bookmark" />
+					</p:submenu>
+					<p:submenu label="Ciudad">
+						<p:menuitem value="Agregar" icon="ui-icon-disk" />
+						<p:menuitem value="Modificar" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Eliminar" icon="ui-icon-closethick" />
+						<p:menuitem value="Buscar" icon="ui-icon-search" />
+						<p:menuitem value="Ver" icon="ui-icon-bookmark" />
+					</p:submenu>			
+				</p:panelMenu>
+			</h:form>
+		</p:layoutUnit>
+
+		<p:layoutUnit position="east" style="background-color: #33BBFF;" size="250" header="GALERIA"
+			resizable="true" closable="true" collapsible="true" effect="drop">
+			<p:galleria panelHeight="180">
+				<p:graphicImage value="/imagenes/cam1.jpg" />
+				<p:graphicImage value="/imagenes/cam2.jpg" />
+				<p:graphicImage value="/imagenes/im4.png" />
+				<p:graphicImage value="/imagenes/im5.jpg" />
+			</p:galleria>
+			<p:galleria panelHeight="170">
+				<p:graphicImage value="/imagenes/im6.jpg" />
+				<p:graphicImage value="/imagenes/im7.jpg" />
+				<p:graphicImage value="/imagenes/im8.jpg" />
+				<p:graphicImage value="/imagenes/im9.jpg" />
+			</p:galleria>	
+		</p:layoutUnit>
+
+		<p:layoutUnit position="center" style="background-color: #33BBFF;">
+		</p:layoutUnit>
+
+	</p:layout>
+</body>
+</html>
